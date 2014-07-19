@@ -1,7 +1,7 @@
-We have recombined the data from the Human Activity Recognition Using Smartphones Dataset.
+I have recombined the data from the Human Activity Recognition Using Smartphones Dataset.
 (original variable names and units are included at the end)
 ==================================================================================================
-From the original 561 features we extracted 33 mean features and 33 std features were retained to 
+From the original 561 features I extracted 33 mean features and 33 std features were retained to 
 be used (in addition with id of the subject and Activity):
 1        id
 2	tBodyAcc-mean()-X
@@ -72,10 +72,10 @@ be used (in addition with id of the subject and Activity):
 67	fBodyBodyGyroJerkMag-std()
 68	Activity
 ==================================================================================================
-For each of those variables we took an average with regards to a pair of id and activity (1, "STANDING")
-for instance which gave us 180 such unique pairs. Hence we have now for each of the 66 variable
+For each of those variables I took an average with regards to a pair of id and activity (1, "STANDING")
+for instance which gave me 180 such unique pairs. Hence I have now for each of the 66 variable
 180 average values (units are conserved). 
-We rename and tidy the names as :
+I renamed and tidy the names as :
 
 1        id
 2	activity
