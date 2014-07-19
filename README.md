@@ -1,4 +1,8 @@
+---
+output: html_document
+---
 Get-and-Clean-Data
 ==================
 
-Coursera class project
+<div>It is assumed that all the Samsung files are downloaded into a directory named Dataset.</div><div>There are 3 functions in run_analysis script:</div><div>run_analysis()</div><div>load_assemble()</div><div>specialmean()</div><div><br></div><div>run_analysis() is the main function. Its tasks are :</div><div>1. Load activity labels and features name from Dataset</div><div>2. Call load_assemble() to go one directory lower to Dataset/train and Dataset/test.</div><div>3. Load_assemble() applied twice bring back two tables: 2947x563 and 7352x563</div><div>4. Merge the two tables into one table : dim 10299x563</div><div>5. Subset the table with only the mean and std variable (33 mean and 33 std) : dim 10299x68</div><div>6. Replace the Activity code by the activity labels&nbsp;</div><div>7. Clean up the names of columns (lower case, remove - and parenthesis)</div><div>8. Split table along id and activity columns. list of 180 tables with 68 columns and various rows</div><div>9. Apply function speciamean on the list. Output is list 180 tables dim 1x68</div><div>10. Recombine all table of list into one table. dim 180x68</div><div>11. Reorder column id activity. Rename column reflecting average</div><div>12. Export as tidydata.txt</div><div><br></div><div>load_assemble() is a helper function. Its tasks are:</div><div>1. Create a list of file names to load</div><div>2. Use lapply to load the list of files&nbsp;</div><div>3. Assemble the file&nbsp;</div><div>4. Load and add the name of columns</div><div><br></div><div>specialmean() is a helper function. Its tasks are:</div><div>1. Create one row output</div><div>2. For every column but id and activity, calculate the average of column</div><div>3. Store average value in the corresponding column in output row.</div><div>4. Return row of averages</div><div><br></div>
+
