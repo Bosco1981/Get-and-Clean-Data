@@ -59,8 +59,9 @@ run_analysis <- function() {
         coln[2]<-"activity"
         colnames(onemean) <-coln
         
-        #export the data in tidydata.txt file
+        #export the data in tidydata.txt file and return the table as invisible
         write.table(onemean,"tidydata.txt")
+        invisible(onemean)
         
 }
 
